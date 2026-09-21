@@ -27,3 +27,26 @@ local.properties
 .cxx/
 *.apk
 *.aab
+
+# --- personal / machine-specific files ---
+local.properties
+.gradle/
+build/
+app/build/
+*.iml
+.idea/
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# --- Maven / Gradle caches & mirrors ---
+.gradle/caches/
+gradle-app.setting
+.gradle-local/
+.m2/
+repository/
