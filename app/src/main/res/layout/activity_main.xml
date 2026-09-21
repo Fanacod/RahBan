@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:background="@drawable/back_main"
+        tools:context=".MainActivity">
+
+        <!-- ================= TOP BAR ================= -->
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- menu -->
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/bg_avatar">
+                <ImageView
+                    android:id="@+id/btnMenu"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_menu"
+
+                    android:contentDescription="منو"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:tint="#FFFFFF" />
+            </LinearLayout>
+
+
+
+            <!-- App Name -->
+
+            <TextView
+                android:id="@+id/txtAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="راه‌بان"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif" />
+            <!-- Spacer -->
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <!-- Logo Placeholder -->
+
+            <ImageView
+                android:id="@+id/txtLogoPlaceholder"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_route"
+                app:tint="@color/main_color"/>
+
+        </LinearLayout>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#7EFFFFFF"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/topBar"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Illustration Placeholder -->
+
+            <ImageView
+                android:id="@+id/txtIllustration"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_route"
+                app:tint="@color/main_color"
+                android:fontFamily="sans-serif" />
+
+            <!-- Main Title -->
+
+            <TextView
+                android:id="@+id/txtFindSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="مدرسه خود را پیدا کنید"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:gravity="center" />
+
+            <!-- Description -->
+
+            <TextView
+                android:id="@+id/txtFindSchoolDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="نام مدرسه یا منطقه خود را جستجو کنید"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="3dp" />
+
+            <!-- Search Box -->
+
+            <LinearLayout
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+
+
+                <Button
+                    android:id="@+id/edtSchoolSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#cc0136"
+                    android:text="شروع"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+
+            <!-- Empty Space / Future Illustration -->
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!--    bottom nav -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:menu="@menu/bottom_nav_menu"
+
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- menu -->
+    <include
+        android:id="@+id/drawerMenuLayout"
+        layout="@layout/drawer_menu"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- مثلثی که در گوشه بالا سمت چپ قرار می‌گیرد -->
+    <path
+        android:fillColor="@color/driver_main"
+        android:pathData="M100,100 L0,100 L100,0 Z" />
+
+    <!-- رنگ را می‌توانید به #CC0136 یا هر رنگ ملایمی تغییر دهید -->
+</vector>
