@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- رنگ حالت انتخاب شده (مثلاً قرمز) -->
+    <item android:color="#FF0000" android:state_checked="true" />
+    <!-- رنگ حالت عادی/غیرفعال (مثلاً خاکستری) -->
+    <item android:color="#757575" android:state_checked="false" />
+</selector>
