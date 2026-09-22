@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setStatusBarColor(Color.BLACK);
         setContentView(R.layout.activity_main);
 
-        //menuu
+        // menu
         DrawerHelper.setup(this);
 
-        // nav btm
+        // navigation button
         BottomNavigationView bottomNavigationView =
                 findViewById(R.id.bottomNavigationView);
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         );
 
 
-        //start btn
+        // start button
         Button edtSchoolSearch = findViewById(R.id.edtSchoolSearch);
 
         edtSchoolSearch.setOnClickListener(v->{
