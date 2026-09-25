@@ -42,5 +42,17 @@ public class driver_activity_profile extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button btnLogout = findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(v -> {
+            getSharedPreferences("rahban", MODE_PRIVATE)
+                    .edit()
+                    .clear()
+                    .apply();
+
+            Intent intent = new Intent(driver_activity_profile.this, driver_activity_splash.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        });
+
     }
 }
