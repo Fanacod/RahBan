@@ -7,11 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -106,20 +104,33 @@ public class driver_activity_register extends AppCompatActivity {
                     }
                     reader.close();
 
+                    final String body = response.toString();
+                    final int code = responseCode;
+
                     runOnUiThread(() -> {
-                        if (responseCode >= 200 && responseCode < 300
-                                && response.toString().contains("\"result\":\"ok\"")) {
+                        if (code >= 200 && code < 300 && body.contains("\"result\":\"ok\"")) {
+                            try {
+                                JSONObject json = new JSONObject(body);
+                                String driverId = json.getString("driver_id");
+
+                                getSharedPreferences("rahban", MODE_PRIVATE)
+                                        .edit()
+                                        .putString("driver_id", driverId)
+                                        .putString("driver_mobile", mobile)
+                                        .apply();
+                            } catch (Exception ignored) {}
+
                             Intent intent = new Intent(driver_activity_register.this, driver_activity_home.class);
                             startActivity(intent);
                             finish();
                         } else {
                             Toast.makeText(driver_activity_register.this,
-                                    "ثبت نام انجام نشد", Toast.LENGTH_LONG).show();
+                                    body, Toast.LENGTH_LONG).show();
                         }
                     });
                 } catch (Exception e) {
                     runOnUiThread(() -> Toast.makeText(driver_activity_register.this,
-                            "خطا در ارتباط با سرور", Toast.LENGTH_LONG).show());
+                            "err=" + e.toString(), Toast.LENGTH_LONG).show());
                 }
             }).start();
         });

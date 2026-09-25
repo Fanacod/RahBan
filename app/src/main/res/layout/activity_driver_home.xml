@@ -138,6 +138,7 @@
 
                 <!-- وضعیت آنلاین -->
                 <LinearLayout
+                    android:id="@+id/statusBadge"
                     android:layout_width="wrap_content"
                     android:layout_height="36dp"
                     android:gravity="center"
@@ -146,11 +147,13 @@
                     android:background="@drawable/bg_online_status">
 
                     <View
+                        android:id="@+id/statusDot"
                         android:layout_width="7dp"
                         android:layout_height="7dp"
                         android:background="@drawable/bg_status_dot" />
 
                     <TextView
+                        android:id="@+id/txtStatusBadge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
@@ -181,6 +184,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <LinearLayout
+                android:id="@+id/activeServiceContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -195,6 +199,7 @@
                 <!-- space -->
 
                 <View
+                    android:id="@+id/topSpacer"
                     android:layout_width="match_parent"
                     android:layout_height="20dp" />
 
@@ -459,6 +464,7 @@
                 <!-- ================= title queek access ================= -->
 
                 <TextView
+                    android:id="@+id/txtQuickAccessTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
@@ -470,6 +476,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/quickAccessRow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="11dp"
@@ -605,6 +612,88 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/pendingContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#E7EEF0"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="22dp">
+
+                            <FrameLayout
+                                android:layout_width="76dp"
+                                android:layout_height="76dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/bg_online_status">
+
+                                <ImageView
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_pending"
+                                    android:contentDescription="در انتظار تایید" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:gravity="center"
+                                android:text="درخواست شما در حال بررسی است"
+                                android:textColor="#123B4A"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:text="در حال پردازش"
+                                android:textColor="#52717A"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/txtPendingBadge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/bg_confirmed_badge"
+                                android:paddingStart="14dp"
+                                android:paddingEnd="14dp"
+                                android:paddingTop="7dp"
+                                android:paddingBottom="7dp"
+                                android:text="در انتظار تأیید"
+                                android:textColor="#cc0136"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </ScrollView>
@@ -639,6 +728,3 @@
         android:layout_height="match_parent"
         android:layout_gravity="right" />
 </androidx.drawerlayout.widget.DrawerLayout>
-
-
-

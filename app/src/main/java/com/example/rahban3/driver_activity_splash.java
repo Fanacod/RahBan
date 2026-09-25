@@ -6,11 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class driver_activity_splash extends AppCompatActivity {
 
@@ -21,11 +17,17 @@ public class driver_activity_splash extends AppCompatActivity {
 
         setContentView(R.layout.activity_driver_splash);
 
+        String driverId = getSharedPreferences("rahban", MODE_PRIVATE)
+                .getString("driver_id", null);
+
+        Class<?> destination = (driverId != null)
+                ? driver_activity_home.class
+                : driver_activity_login.class;
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(driver_activity_splash.this, driver_activity_login.class);
+                Intent intent = new Intent(driver_activity_splash.this, destination);
                 startActivity(intent);
                 finish();
             }
