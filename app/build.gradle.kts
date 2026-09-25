@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.rahban3"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.rahban3"
@@ -25,6 +23,7 @@ android {
             }
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -36,8 +35,8 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
     implementation(libs.material)
-    // SDK نقشه نشان
-    // SDK جدید و رسمی نقشه نشان (بر پایه MapLibre OpenGL)
+
+    // SDK نقشه نشان (MapLibre OpenGL)
     implementation("org.neshan.maplibre:android-sdk-opengl:13.4.1")
 
     // کتابخانه‌های استاندارد اندروید
@@ -46,9 +45,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
     implementation("com.google.android.gms:play-services-location:21.0.1")
 
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
-
 }
