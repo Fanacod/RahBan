@@ -101,7 +101,7 @@ public class driver_activity_home extends AppCompatActivity {
 
         new Thread(() -> {
             try {
-                URL url = new URL("https://nemayab.ir/rahban/api/get_drivers.php?id=" + driverId);
+                URL url = new URL("https://nemayab.ir/rahban/api/get_drivers.php?driver_id=" + driverId);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
                 conn.setConnectTimeout(15000);
