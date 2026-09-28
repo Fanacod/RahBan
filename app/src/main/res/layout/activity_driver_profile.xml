@@ -105,6 +105,7 @@
                     <!-- Verified -->
 
                     <LinearLayout
+                        android:id="@+id/verifiedBadge"
                         android:layout_width="wrap_content"
                         android:layout_height="34dp"
                         android:layout_marginTop="12dp"
@@ -115,13 +116,15 @@
                         android:background="@drawable/bg_bus_icon">
 
                         <ImageView
+                            android:id="@+id/imgVerifiedTick"
                             android:layout_width="18dp"
                             android:layout_height="18dp"
                             android:src="@drawable/ic_check_circle"
                             android:contentDescription="تأیید شده"
-                             />
+                            />
 
                         <TextView
+                            android:id="@+id/txtVerifiedText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="6dp"
@@ -504,6 +507,7 @@
             <!-- ========================= -->
 
             <TextView
+                android:id="@+id/txtServiceSectionTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
