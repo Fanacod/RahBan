@@ -23,11 +23,11 @@ public class activity_login extends AppCompatActivity {
         Button btnGetCode = findViewById(R.id.btnGetCode);
         Button btnVerify = findViewById(R.id.btnVerify);
 
-        btnGetCode.setOnClickListener(v ->{
+        btnGetCode.setOnClickListener(v ->{ // add backend to get code here
             otpOverlay.setVisibility(View.VISIBLE);
         } );
 
-        btnVerify.setOnClickListener(v->{
+        btnVerify.setOnClickListener(v->{ // add backend to verify and send to mainscreen here
             Intent intent = new Intent(activity_login.this, activity_complate_parent_information.class);
             startActivity(intent);
             finish();

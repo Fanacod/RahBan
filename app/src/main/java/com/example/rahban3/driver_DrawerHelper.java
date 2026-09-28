@@ -105,7 +105,14 @@ public class driver_DrawerHelper {
 
                 drawerLayout.closeDrawer(Gravity.RIGHT);
 
-                // خروج از حساب
+                activity.getSharedPreferences("rahban", android.content.Context.MODE_PRIVATE)
+                        .edit()
+                        .clear()
+                        .apply();
+
+                Intent intent = new Intent(activity, driver_activity_splash.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                activity.startActivity(intent);
             });
         }
     }

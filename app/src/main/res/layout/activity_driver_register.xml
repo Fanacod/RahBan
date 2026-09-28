@@ -30,9 +30,6 @@
             android:paddingTop="14dp"
             android:paddingBottom="30dp">
 
-
-
-
             <!-- Intro Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -96,7 +93,6 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-
             <!-- ================= PERSONAL ================= -->
 
             <LinearLayout
@@ -130,7 +126,6 @@
 
             </LinearLayout>
 
-
             <!-- Full Name -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutFullName"
@@ -139,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:hint="نام و نام خانوادگی"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -147,7 +143,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtFullName"
@@ -155,12 +151,11 @@
                     android:layout_height="56dp"
                     android:inputType="textPersonName"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- National ID -->
             <com.google.android.material.textfield.TextInputLayout
@@ -170,6 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="کد ملی"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -178,7 +174,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtNationalId"
@@ -187,12 +183,11 @@
                     android:inputType="number"
                     android:maxLength="10"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Mobile -->
             <com.google.android.material.textfield.TextInputLayout
@@ -202,6 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="شماره موبایل"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -210,7 +206,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtMobile"
@@ -219,12 +215,11 @@
                     android:inputType="phone"
                     android:maxLength="11"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- ================= DRIVING ================= -->
 
@@ -259,7 +254,6 @@
 
             </LinearLayout>
 
-
             <!-- License -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutLicense"
@@ -268,6 +262,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:hint="شماره گواهینامه"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -276,7 +271,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtLicense"
@@ -284,12 +279,11 @@
                     android:layout_height="56dp"
                     android:inputType="number"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Experience -->
             <com.google.android.material.textfield.TextInputLayout
@@ -299,6 +293,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="سابقه رانندگی (سال)"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -307,7 +302,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtExperience"
@@ -315,12 +310,11 @@
                     android:layout_height="56dp"
                     android:inputType="number"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Emergency -->
             <com.google.android.material.textfield.TextInputLayout
@@ -330,6 +324,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="شماره تماس اضطراری"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -338,7 +333,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtEmergency"
@@ -347,12 +342,11 @@
                     android:inputType="phone"
                     android:maxLength="11"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- ================= VEHICLE ================= -->
 
@@ -387,7 +381,6 @@
 
             </LinearLayout>
 
-
             <!-- Vehicle Type -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutVehicleType"
@@ -396,6 +389,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:hint="نوع خودرو"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -404,7 +398,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtVehicleType"
@@ -412,12 +406,11 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Vehicle Model -->
             <com.google.android.material.textfield.TextInputLayout
@@ -427,6 +420,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="مدل خودرو"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -435,7 +429,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtVehicleModel"
@@ -443,12 +437,11 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Vehicle Color -->
             <com.google.android.material.textfield.TextInputLayout
@@ -458,6 +451,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="رنگ خودرو"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -466,7 +460,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtVehicleColor"
@@ -474,12 +468,11 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Plate -->
             <com.google.android.material.textfield.TextInputLayout
@@ -489,6 +482,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="شماره پلاک"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -497,7 +491,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtPlate"
@@ -505,12 +499,11 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Capacity -->
             <com.google.android.material.textfield.TextInputLayout
@@ -520,6 +513,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="ظرفیت خودرو"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -528,7 +522,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtCapacity"
@@ -536,12 +530,11 @@
                     android:layout_height="56dp"
                     android:inputType="number"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- ================= SERVICE ================= -->
 
@@ -576,7 +569,6 @@
 
             </LinearLayout>
 
-
             <!-- Area -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/layoutArea"
@@ -585,6 +577,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:hint="منطقه فعالیت"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -593,7 +586,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtArea"
@@ -601,12 +594,11 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:gravity="start|center_vertical"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Route -->
             <com.google.android.material.textfield.TextInputLayout
@@ -616,6 +608,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="مسیر پیشنهادی سرویس"
+                android:textColorHint="#000000"
                 app:boxBackgroundColor="#FFFFFF"
                 app:boxCornerRadiusTopStart="15dp"
                 app:boxCornerRadiusTopEnd="15dp"
@@ -624,7 +617,7 @@
                 app:boxStrokeColor="#C4D1D5"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
-                app:hintTextColor="#526A71">
+                app:hintTextColor="#37474F">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtRoute"
@@ -633,12 +626,11 @@
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:textColor="#123B4A"
-                    android:textColorHint="#526A71"
+                    android:textColorHint="#37474F"
                     android:textSize="14sp"
                     android:paddingTop="14dp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <!-- Agreement -->
             <com.google.android.material.card.MaterialCardView
@@ -658,11 +650,16 @@
                     android:orientation="horizontal"
                     android:padding="12dp">
 
-                    <CheckBox
+                    <com.google.android.material.checkbox.MaterialCheckBox
                         android:id="@+id/checkAgreement"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="#0FA69A"/>
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:padding="12dp"
+                        android:buttonTint="#0FA69A"
+                        app:buttonTint="#0FA69A"
+                        app:useMaterialThemeColors="false"/>
 
                     <TextView
                         android:id="@+id/txtAgreement"
@@ -680,7 +677,6 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-
             <!-- Register Button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegisterDriver"
@@ -697,7 +693,6 @@
                 app:icon="@drawable/ic_check_circle"
                 app:iconGravity="textStart"
                 app:iconTint="@android:color/white"/>
-
 
             <TextView
                 android:layout_width="match_parent"

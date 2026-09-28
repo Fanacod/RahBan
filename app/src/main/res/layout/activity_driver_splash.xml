@@ -7,7 +7,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_splash"
-    android:background="@drawable/driver_splash">
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/imgSplashBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/driver_splash"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <TextView
